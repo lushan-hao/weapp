@@ -1,0 +1,40 @@
+<view class="main">
+    <Header></Header>
+    <view class="nav-war">
+        <scroll-view class="nav" scroll-x>
+            <view bindtap="activenav" data-index="{{index}}" class="nav-item {{index===isactive?'active':''}}"
+             wx:for="{{navList}}" wx:key="{{index}}">
+                {{item.text}}
+            </view>
+        </scroll-view>
+    </view>
+    <view class="slider">
+        <swiper class="" indicator-dots autoplay interval="5000" circular indicator-active-color="blue" indicator-color="white">
+            <swiper-item  class="" item-id="" wx:for="{{swiperList}}" wx:key="index">
+                <navigator>
+                    <image mode="widthFix" src="{{item.imgSrc}}" class="">
+                    </image>
+                </navigator>
+            </swiper-item>
+        </swiper>
+    </view>
+    <view class="video-war">
+        <navigator url="../detail/details?id={{item.id}}"   class="video-item" wx:for="{{videosList}}" wx:key="{{index}}">
+            <view class="video-image">
+                <image class="" src="{{item.imgSrc}}" mode="widthFix" lazy-load="false" binderror="" bindload="">
+                </image>
+                <view class="video-info">
+                    <view class="play-count">
+                        <image class="biao" src="../../icons/play.svg"></image>
+                        <text class="play-num">{{item.playCount}}</text>
+                    </view>
+                    <view class="comment-count">
+                        <image class="biao" src="../../icons/comment.svg"></image>
+                        <text class="comment-num">{{item.commentCount}}</text>
+                    </view>
+                </view>
+            </view>
+             <view class="video-title">{{item.desc}}</view>
+        </navigator>
+    </view>
+</view>

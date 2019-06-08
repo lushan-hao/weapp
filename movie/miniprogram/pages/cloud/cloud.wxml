@@ -1,0 +1,12 @@
+<view class='profile'>
+  <view class="profile-img">
+    <open-data type="userAvatarUrl"></open-data>
+  </view>
+  <open-data type="userNickName" class="profile-name"></open-data>
+</view>
+<button class='button' wx:if="{{!country}}" open-type="getUserInfo" bindgetuserinfo="onGotUserInfo">获取用户信息</button>
+<view class='info' wx:if="{{country}}">
+  <view>国家：{{country}}</view>
+  <view>城市：{{city}}</view>
+  <view>省份：{{province}}</view>
+</view>

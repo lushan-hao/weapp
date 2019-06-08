@@ -1,0 +1,12 @@
+<view class="title">
+    <navigator class="logo">
+        <image class="logo-image" src="../../icons/logo.png"></image>
+    </navigator>
+    <view class="search" >
+        <image class="search-image" src="../../icons/search.png"></image>
+    </view>
+    <view class="user" >
+        <image class="user-image" src="../../icons/user.png"></image>
+    </view>
+    <view class="down" >下载</view>
+</view>

@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/movie/movie",
+    "pages/cloud/cloud",
+    "pages/comment/comment",
+    "pages/index/index",
+    "pages/detail/details"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#E54847",
+    "navigationBarTitleText": "最新电影",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#E54847",
+    "list": [
+      {
+        "pagePath": "pages/movie/movie",
+        "text": "电影",
+        "iconPath": "images/film.png",
+        "selectedIconPath": "images/film-actived.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "视频", 
+        "iconPath": "images/bilibili.png",
+        "selectedIconPath": "images/bilibili-actived.png"
+      },
+      {
+        "pagePath": "pages/cloud/cloud",
+        "text": "我的",
+        "iconPath": "images/profile.png",
+        "selectedIconPath": "images/profile-actived.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
